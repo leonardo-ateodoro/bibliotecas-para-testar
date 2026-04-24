@@ -1,0 +1,35 @@
+
+
+
+/** Reset */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/** Variáveis */
+:root {
+  --cor-bg: #e7e7e7;
+  --cor-text: #008807;
+}
+
+/** Links padrão */
+a {
+  color: black;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/** Conteúdo SPA */
+[data-conteudo] {
+  padding: 20px;
+}
+
+.pagina p{
+  color: var(--cor-text)
+}
