@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Consulta de CEP</title>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing:border-box ;
+        }
+        main {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f4f4f4;
+            font-family: arial, sans-serif;
+    
+        }
+        
+        .container {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+    
+        }
+
+        .container__titulo {
+            margin-bottom: 1rem;
+
+        
+        }
+
+        .container__input {
+            padding: 0.5rem;
+            width: 200px;
+            margin-bottom: 1rem;
+        }
+
+        .container__botao {
+            padding: 0.5rem 1rem;
+            margin: 0.3rem;
+            border: none;
+            background: #333;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 4px;
+
+        }
+
+        .container__botao:hover {
+            background: #555;
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1 class="container__titulo">Consulta de CEP</h1>
+            <input 
+            type="text"
+            class="container__input"
+            placeholder="Digite o CEP">
+        
+
+        <div>
+            <button class="container__botao" id="btn-then">
+                Buscar com .then() 
+
+            </button>
+
+            <button class="container__botao" id="btn-async">
+                Buscar com async/await
+            </button>
+        </div>
+    </div>
+</main>
+
+<script src="script-cep.js"></script>
+    
+</body>
+</html>
