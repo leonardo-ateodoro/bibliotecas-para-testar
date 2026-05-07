@@ -27,13 +27,14 @@ export const iniciarMenu = () => {
         botao.setAttribute('aria-label', 'Abrir Menu');
         botao.focus();
       }
+
        };
    
 
     /** Evento de clique */
-    botao.addEventListener
+    botao.addEventListener('pointerdowm', toggleMenu);
 
     /** Evento global de teclado */
-  
+    document.addEventListener('keydown', fecharComEsc);
   });
 };
